@@ -41,15 +41,15 @@ const Navbar = () => {
   return (
     <nav className="p-4  bg-background/50 sticky top-0 backdrop-blur border-b z-10">
       <LoadingBar
-        color="#fff"
+        color="#f9a8d4"
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />
       <div className="container mx-auto flex justify-between items-center">
         <Link href={"/blog"}>
-          <div className="text-lg font-bold">Blogs by Sai Kiran</div>
+          <div className="text-3xl text-black dark:text-white font-medium underline">Sai Kiran Blogs</div>
         </Link>
-        <div className="hidden md:flex space-x-4 items-center">
+        <div className="hidden md:flex space-x-10 items-center">
           <Link
             href="/"
             className="hover:scale-105 hover:font-semibold transition-transform duration-300"
@@ -95,7 +95,7 @@ const Navbar = () => {
                 <SheetDescription>
                   <div className="flex flex-col gap-6">
                     <Link href="/"> Home</Link>
-                    <Link href="/blog">Blog</Link>
+                    <Link href="/blog">Blogs Section</Link>
                   </div>
                 </SheetDescription>
               </SheetHeader>
