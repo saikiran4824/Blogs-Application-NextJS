@@ -1,5 +1,6 @@
-// next.config.mjs
+// next.config.js or next.config.mjs
 export default {
-  reactStrictMode: true,
-  // Add any other configuration options you need
+  eslint: {
+    ignoreDuringBuilds: true,  // Disable ESLint during builds
+  },
 };

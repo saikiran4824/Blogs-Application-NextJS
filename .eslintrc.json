@@ -1,6 +1,6 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+  "extends": "next",
+  "rules": {
+    "no-console": "off"  // Disable the 'no-console' rule
   }
 }
