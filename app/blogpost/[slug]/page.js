@@ -1,24 +1,24 @@
-"use client"; // Ensure this runs on the client side
+'use client'; // Ensure this runs on the client side
 
-import React, { useEffect, useState } from "react";
-import { notFound } from "next/navigation";
-import rehypeDocument from "rehype-document";
-import rehypeFormat from "rehype-format";
-import rehypeStringify from "rehype-stringify";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import { unified } from "unified";
-import rehypePrettyCode from "rehype-pretty-code";
-import { transformerCopyButton } from "@rehype-pretty/transformers";
-import OnThisPage from "@/components/onthispage";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeSlug from "rehype-slug";
-import ScrollToTopButton from "@/components/scrollToTopButton";
-import matter from "gray-matter";
+import React, { useEffect, useState } from 'react';
+import { notFound } from 'next/navigation';
+import rehypeDocument from 'rehype-document';
+import rehypeFormat from 'rehype-format';
+import rehypeStringify from 'rehype-stringify';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
+import rehypePrettyCode from 'rehype-pretty-code';
+import { transformerCopyButton } from '@rehype-pretty/transformers';
+import OnThisPage from '@/components/onthispage';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+import ScrollToTopButton from '@/components/scrollToTopButton';
+import matter from 'gray-matter';
 
 export default function Page({ params }) {
   const [blogData, setBlogData] = useState(null);
-  const [htmlContent, setHtmlContent] = useState("");
+  const [htmlContent, setHtmlContent] = useState('');
 
   useEffect(() => {
     const fetchMarkdown = async () => {
@@ -37,16 +37,16 @@ export default function Page({ params }) {
         const processor = unified()
           .use(remarkParse)
           .use(remarkRehype)
-          .use(rehypeDocument, { title: data.title || "Blog Post" })
+          .use(rehypeDocument, { title: data.title || 'Blog Post' })
           .use(rehypeFormat)
           .use(rehypeStringify)
           .use(rehypeSlug)
           .use(rehypeAutolinkHeadings)
           .use(rehypePrettyCode, {
-            theme: "github-dark",
+            theme: 'github-dark',
             transformers: [
               transformerCopyButton({
-                visibility: "always",
+                visibility: 'always',
                 feedbackDuration: 3_000,
               }),
             ],
@@ -56,7 +56,7 @@ export default function Page({ params }) {
         setHtmlContent(processedHtml);
         setBlogData(data);
       } catch (error) {
-        console.error("Error fetching markdown file:", error);
+        console.error('Error fetching markdown file:', error);
         notFound();
       }
     };
@@ -78,7 +78,9 @@ export default function Page({ params }) {
         &quot;{blogData.description}&quot;
       </p>
       <div className="flex gap-2">
-        <p className="text-sm text-gray-500 mb-4 italic">By {blogData.author}</p>
+        <p className="text-sm text-gray-500 mb-4 italic">
+          By {blogData.author}
+        </p>
       </div>
       <div
         dangerouslySetInnerHTML={{ __html: htmlContent }}
@@ -87,14 +89,15 @@ export default function Page({ params }) {
       <OnThisPage htmlContent={htmlContent} />
       <ScrollToTopButton />
       <footer className=" text-white dark:text-black py-8 my-8">
-      <div className="container mx-auto px-6 md:px-12">
-        
-        <div className=" text-center text-gray-400 dark:text-white text-sm border-t border-gray-700 pt-4">
-          <p>© {new Date().getFullYear()} Sai Kiran 💖 Preethi. All rights reserved.</p>
+        <div className="container mx-auto px-6 md:px-12">
+          <div className=" text-center text-gray-400 dark:text-white text-sm border-t border-gray-700 pt-4">
+            <p>
+              © {new Date().getFullYear()} Sai Kiran 💖 Preethi. All rights
+              reserved.
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-
+      </footer>
     </div>
   );
 }

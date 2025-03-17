@@ -38,6 +38,7 @@ Node.js is a powerful JavaScript runtime that allows developers to build scalabl
 To get started with Node.js, follow these steps:
 
 ### 1. Install Node.js
+
 Download and install Node.js from the [official website](https://nodejs.org/).
 
 Verify the installation using:
@@ -48,6 +49,7 @@ npm -v
 ```
 
 ### 2. Create a Node.js Application
+
 Create a new project folder and initialize it with npm:
 
 ```bash
@@ -62,22 +64,24 @@ npm install express
 ```
 
 ### 4. Create a Simple Node.js Server
+
 Create a file `server.js` and add the following code:
 
 ```javascript
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello, Node.js!');
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello, Node.js!');
 });
 
 server.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
+  console.log('Server is running on http://localhost:3000');
 });
 ```
 
 ### 5. Run the Server
+
 Start your server using:
 
 ```bash
@@ -94,11 +98,11 @@ const app = express();
 const PORT = 3000;
 
 app.get('/api/hello', (req, res) => {
-    res.json({ message: 'Hello, Node.js!' });
+  res.json({ message: 'Hello, Node.js!' });
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
 ```
 

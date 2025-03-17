@@ -1,8 +1,8 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import Typed from "typed.js";
-import React, { useRef, useEffect } from "react";
-import Link from "next/link";
+'use client';
+import { Button } from '@/components/ui/button';
+import Typed from 'typed.js';
+import React, { useRef, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   // Create reference to store the DOM element containing the animation
@@ -11,32 +11,32 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Coding Enthusiast",
-        "Web Developer",
-        "Software Engineer",
-        "Frontend Developer",
-        "Full-Stack Developer",
-        "JavaScript Developer",
-        "Prompt Engineer",
-        "React.js Developer",
-        "Next.js Developer",
-        "UI/UX Engineer",
-        "Tech Innovator",
-        "Open Source Contributor",
-        "Problem Solver",
-        "Tech Blogger",
-        "AI-Powered Developer",
-        "TypeScript Enthusiast",
+        'Coding Enthusiast',
+        'Web Developer',
+        'Software Engineer',
+        'Frontend Developer',
+        'Full-Stack Developer',
+        'JavaScript Developer',
+        'Prompt Engineer',
+        'React.js Developer',
+        'Next.js Developer',
+        'UI/UX Engineer',
+        'Tech Innovator',
+        'Open Source Contributor',
+        'Problem Solver',
+        'Tech Blogger',
+        'AI-Powered Developer',
+        'TypeScript Enthusiast',
 
-        "DevOps Enthusiast",
-        "Performance Optimizer",
+        'DevOps Enthusiast',
+        'Performance Optimizer',
 
-        "GraphQL Developer",
-        "API Integration Expert",
-        "Agile Practitioner",
-        "Data Structures & Algorithms Enthusiast",
-        "Automation Engineer",
-        "CI/CD Specialist",
+        'GraphQL Developer',
+        'API Integration Expert',
+        'Agile Practitioner',
+        'Data Structures & Algorithms Enthusiast',
+        'Automation Engineer',
+        'CI/CD Specialist',
       ],
       typeSpeed: 100,
     });
@@ -53,7 +53,8 @@ export default function Home() {
         <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
           <div className="w-full text-center lg:text-left  ">
             <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-              Hey, <span className="font-semibold">I am Sai Kiran</span>{" "} <br className="block md:hidden"></br>
+              Hey, <span className="font-semibold">I am Sai Kiran</span>{' '}
+              <br className="block md:hidden"></br>
               <span className="font-semibold underline decoration-primary">
                 <span ref={el} />
               </span>
@@ -61,7 +62,7 @@ export default function Home() {
           </div>
         </section>
         <div className=" flex items-center justify-center  border-2 dark:bg-inherit bg-white text-blue-600 dark:text-blue-400 p-6">
-          <Link href={"/blog"}>
+          <Link href={'/blog'}>
             <div className="text-3xl font-bold ">Go to Blogs Section</div>
           </Link>
         </div>
@@ -75,7 +76,6 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-purple-600 dark:text-purple-400">
             Frontend Developer | Full Stack Developer
           </h2>
-         
 
           <h2 className="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mt-6">
             Professional Skills
@@ -84,64 +84,64 @@ export default function Home() {
             <li>
               <span className="text-pink-600 dark:text-pink-300">
                 Frontend Frameworks & Libraries:
-              </span>{" "}
+              </span>{' '}
               React, Vue.js, Next.js, Angular, Svelte
             </li>
             <li>
               <span className="text-cyan-600 dark:text-cyan-300">
                 Programming Languages:
-              </span>{" "}
+              </span>{' '}
               JavaScript, TypeScript, Python, Java
             </li>
             <li>
               <span className="text-teal-600 dark:text-teal-300">
                 UI/UX & Styling:
-              </span>{" "}
+              </span>{' '}
               Responsive web design, Sass, Material UI, Chakra UI, Bootstrap,
               Tailwind CSS, ShadCN, Framer Motion, Figma, Adobe XD
             </li>
             <li>
               <span className="text-lime-600 dark:text-lime-300">
                 State Management:
-              </span>{" "}
+              </span>{' '}
               Redux, RxJS, Context API, NgRx, Mobx, Vuex
             </li>
             <li>
               <span className="text-purple-600 dark:text-purple-300">
                 Data Visualization:
-              </span>{" "}
+              </span>{' '}
               D3.js, Chart.js, Recharts
             </li>
             <li>
               <span className="text-orange-600 dark:text-orange-300">
                 Debugging & Testing:
-              </span>{" "}
-              Chrome DevTools, Cypress, Selenium, Protractor, Jest, Enzyme, React Testing
-              Library, Postman
+              </span>{' '}
+              Chrome DevTools, Cypress, Selenium, Protractor, Jest, Enzyme,
+              React Testing Library, Postman
             </li>
             <li>
               <span className="text-yellow-600 dark:text-yellow-300">
                 Version Control & CI/CD:
-              </span>{" "}
+              </span>{' '}
               Git, GitHub, GitLab, CI/CD pipelines
             </li>
             <li>
               <span className="text-red-600 dark:text-red-300">
                 Agile Methodologies:
-              </span>{" "}
+              </span>{' '}
               Scrum, Kanban, Jira
             </li>
             <li>
               <span className="text-blue-600 dark:text-blue-300">
                 Backend & API Integration:
-              </span>{" "}
+              </span>{' '}
               RESTful APIs, GraphQL, Firebase, Node.js (Express.js), Python
               (Flask/Django)
             </li>
             <li>
               <span className="text-green-600 dark:text-green-300">
                 Cloud & Deployment:
-              </span>{" "}
+              </span>{' '}
               AWS, Docker, Kubernetes, Vercel, Netlify
             </li>
           </ul>
@@ -151,26 +151,26 @@ export default function Home() {
           </h2>
           <ul className="list-disc list-inside mt-2 text-gray-800 dark:text-gray-300">
             <li>
-              Collaborative team player with{" "}
+              Collaborative team player with{' '}
               <span className="text-green-600 dark:text-green-300">
                 excellent communication skills
               </span>
             </li>
             <li>
-              Results-driven with a strong focus on{" "}
+              Results-driven with a strong focus on{' '}
               <span className="text-yellow-600 dark:text-yellow-300">
                 delivering high-quality, scalable solutions
               </span>
             </li>
             <li>
-              Adaptable and responsive to{" "}
+              Adaptable and responsive to{' '}
               <span className="text-blue-600 dark:text-blue-300">
                 changing project requirements
               </span>
             </li>
             <li>
-              Passionate about{" "}
-              <span className="text-red-600 dark:text-red-300">innovation</span>{" "}
+              Passionate about{' '}
+              <span className="text-red-600 dark:text-red-300">innovation</span>{' '}
               and staying up-to-date with industry trends
             </li>
           </ul>

@@ -5,7 +5,7 @@ slug: introduction-to-php
 author: Sai Kiran
 image: https://metamug.com/article/images/api-integration/create-rest-api-in-php.jpg
 ---
-  
+
 # Introduction to PHP: A Comprehensive Tutorial
 
 PHP is one of the most widely used server-side scripting languages for web development. It is known for its simplicity, flexibility, and ability to integrate seamlessly with databases like MySQL. This tutorial will introduce you to PHP, covering its core concepts, setup, syntax, and how to use it to build dynamic web applications.

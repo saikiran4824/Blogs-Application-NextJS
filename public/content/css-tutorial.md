@@ -35,16 +35,16 @@ To use CSS, you can either include it directly in your HTML file (inline or inte
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <style>
-        p {
-            color: blue;
-        }
+      p {
+        color: blue;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <p>This is a blue paragraph.</p>
-</body>
+  </body>
 </html>
 ```
 
@@ -53,14 +53,14 @@ To use CSS, you can either include it directly in your HTML file (inline or inte
 Create a separate CSS file (e.g., `styles.css`) and link it to your HTML file.
 
 ```html
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" />
 ```
 
 In `styles.css`:
 
 ```css
 p {
-    color: blue;
+  color: blue;
 }
 ```
 
@@ -79,17 +79,17 @@ Selectors are used to target HTML elements and apply styles. Some common selecto
 ```css
 /* Element selector */
 p {
-    color: green;
+  color: green;
 }
 
 /* Class selector */
 .example {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* ID selector */
 #header {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 ```
 
@@ -100,17 +100,17 @@ CSS allows you to set text colors, background colors, and images.
 ```css
 /* Text color */
 h1 {
-    color: darkblue;
+  color: darkblue;
 }
 
 /* Background color */
 body {
-    background-color: lightyellow;
+  background-color: lightyellow;
 }
 
 /* Background image */
 div {
-    background-image: url('background.jpg');
+  background-image: url('background.jpg');
 }
 ```
 
@@ -120,10 +120,10 @@ Control the typography of your website using fonts, text alignment, and decorati
 
 ```css
 h1 {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    text-align: center;
-    text-decoration: underline;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
 }
 ```
 
@@ -137,10 +137,10 @@ The box model is fundamental to understanding how elements are sized and spaced 
 
 ```css
 div {
-    width: 200px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 20px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
 }
 ```
 
@@ -156,9 +156,9 @@ CSS provides several ways to position elements on a page:
 
 ```css
 div {
-    position: relative;
-    top: 10px;
-    left: 20px;
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
 ```
 
@@ -168,14 +168,14 @@ Flexbox is a powerful layout model that allows you to create flexible and respon
 
 ```css
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item {
-    flex: 1;
-    margin: 10px;
+  flex: 1;
+  margin: 10px;
 }
 ```
 
@@ -185,14 +185,14 @@ CSS Grid Layout provides a two-dimensional layout system, making it easy to desi
 
 ```css
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .item {
-    background-color: lightblue;
-    padding: 20px;
+  background-color: lightblue;
+  padding: 20px;
 }
 ```
 
@@ -206,16 +206,16 @@ CSS animations allow you to animate transitions between different styles.
 
 ```css
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 div {
-    animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 ```
 
@@ -225,12 +225,12 @@ Transitions allow you to smoothly change property values over a specified durati
 
 ```css
 button {
-    background-color: blue;
-    transition: background-color 0.5s ease;
+  background-color: blue;
+  transition: background-color 0.5s ease;
 }
 
 button:hover {
-    background-color: green;
+  background-color: green;
 }
 ```
 
@@ -241,16 +241,16 @@ Media queries enable responsive design by applying different styles based on the
 ```css
 /* For screens wider than 600px */
 @media (min-width: 600px) {
-    body {
-        background-color: lightgreen;
-    }
+  body {
+    background-color: lightgreen;
+  }
 }
 
 /* For screens narrower than 600px */
 @media (max-width: 600px) {
-    body {
-        background-color: lightpink;
-    }
+  body {
+    background-color: lightpink;
+  }
 }
 ```
 

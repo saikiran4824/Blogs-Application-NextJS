@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
@@ -9,12 +9,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from '@/components/ui/sheet';
 
-import { ModeToggle } from "./theme-btn";
-import LoadingBar from "react-top-loading-bar";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { ModeToggle } from './theme-btn';
+import LoadingBar from 'react-top-loading-bar';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [progress, setProgress] = useState(0);
@@ -46,18 +46,20 @@ const Navbar = () => {
         onLoaderFinished={() => setProgress(0)}
       />
       <div className="container mx-auto flex justify-between items-center">
-        <Link href={"/blog"}>
-          <div className="text-3xl text-black dark:text-white font-medium underline">Sai Kiran Blogs</div>
+        <Link href={'/blog'}>
+          <div className="text-3xl text-black dark:text-white font-medium underline">
+            Sai Kiran Blogs
+          </div>
         </Link>
         <div className="hidden md:flex space-x-10 items-center">
           <Link
             href="/"
             className="hover:scale-105 hover:font-semibold transition-transform duration-300"
           >
-            {" "}
+            {' '}
             Home
           </Link>
-          
+
           <Link
             href="/blog"
             className="hover:scale-105 hover:font-semibold transition-transform duration-300"
@@ -91,7 +93,9 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className="font-bold my-4">Sai KiranBlog</SheetTitle>
+                <SheetTitle className="font-bold my-4">
+                  Sai KiranBlog
+                </SheetTitle>
                 <SheetDescription>
                   <div className="flex flex-col gap-6">
                     <Link href="/"> Home</Link>

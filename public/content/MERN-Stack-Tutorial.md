@@ -13,6 +13,7 @@ The MERN stack is a powerful combination of technologies used to build full-stac
 ## What is the MERN Stack?
 
 The MERN stack includes:
+
 - **MongoDB** – A NoSQL database for storing application data.
 - **Express.js** – A lightweight framework for building backend APIs.
 - **React** – A frontend library for building interactive user interfaces.
@@ -29,28 +30,35 @@ The MERN stack includes:
 ## Setting Up the MERN Stack
 
 ### 1. Install Node.js and npm
+
 Download and install [Node.js](https://nodejs.org/) which includes npm (Node Package Manager).
 
 Verify installation:
+
 ```bash
 node -v
 npm -v
 ```
 
 ### 2. Initialize a Node.js Project
+
 Create a new directory and initialize a Node.js project:
+
 ```bash
 mkdir mern-app && cd mern-app
 npm init -y
 ```
 
 ### 3. Install Express.js
+
 Install Express.js for backend development:
+
 ```bash
 npm install express cors mongoose dotenv
 ```
 
 Create an `index.js` file and set up a basic Express server:
+
 ```javascript
 const express = require('express');
 const app = express();
@@ -62,26 +70,33 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
+
 Run the server:
+
 ```bash
 node index.js
 ```
 
 ### 4. Set Up MongoDB
+
 - Install MongoDB from [MongoDB Atlas](https://www.mongodb.com/atlas) or locally.
 - Connect to MongoDB using Mongoose:
 
 ```javascript
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mern_db', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+mongoose
+  .connect('mongodb://localhost:27017/mern_db', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('MongoDB Connected'))
+  .catch((err) => console.log(err));
 ```
 
 ### 5. Install React.js for Frontend
+
 In a separate terminal, create a React app:
+
 ```bash
 npx create-react-app client
 cd client
@@ -89,20 +104,27 @@ npm start
 ```
 
 ### 6. Connect Frontend and Backend
+
 Modify `package.json` in the React app to include a proxy:
+
 ```json
 "proxy": "http://localhost:5000"
 ```
 
 Fetch data from the backend inside `App.js`:
+
 ```javascript
 useEffect(() => {
-  fetch('/').then(res => res.text()).then(data => console.log(data));
+  fetch('/')
+    .then((res) => res.text())
+    .then((data) => console.log(data));
 }, []);
 ```
 
 ### 7. Building APIs with Express and MongoDB
+
 Create a new route for fetching data:
+
 ```javascript
 const express = require('express');
 const router = express.Router();
@@ -119,10 +141,14 @@ router.get('/items', async (req, res) => {
 ```
 
 ### 8. Connecting React with Express
+
 Modify `App.js` in the React app to fetch data:
+
 ```javascript
 useEffect(() => {
-  fetch('/api/items').then(res => res.json()).then(data => setItems(data));
+  fetch('/api/items')
+    .then((res) => res.json())
+    .then((data) => setItems(data));
 }, []);
 ```
 
@@ -135,4 +161,5 @@ useEffect(() => {
 5. **Cross-Platform** – Works well with web and mobile applications.
 
 ## Conclusion
+
 The MERN stack is a powerful and flexible technology for building modern web applications. By mastering its components, you can create scalable and high-performance applications with ease. Start building your first MERN stack project today! 🚀

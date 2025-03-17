@@ -5,7 +5,7 @@ slug: introduction-to-spring-boot
 author: Sai Kiran
 image: https://i0.wp.com/e4developer.com/wp-content/uploads/2018/01/spring-boot.png?w=1300&ssl=1
 ---
-  
+
 # Introduction to Spring Boot: A Comprehensive Tutorial
 
 Spring Boot is a popular framework for building enterprise-level Java applications. It simplifies the development process by providing a convention-over-configuration approach, embedded servers, and built-in dependency management. This tutorial will guide you through the basics of Spring Boot, its setup, and how to use it to create a REST API.
@@ -103,7 +103,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class HelloController {
-    
+
     @GetMapping("/hello")
     public String sayHello() {
         return "Hello, Spring Boot!";
@@ -212,8 +212,7 @@ public class UserService {
     }
 }
 ```
+
 ## Conclusion
 
 Spring Boot simplifies Java application development by providing built-in configurations, an embedded server, and easy integration with databases. This tutorial covered setting up a Spring Boot project, building a REST API, and connecting to a database. You can now extend this knowledge to create more complex applications with Spring Boot.
-
-

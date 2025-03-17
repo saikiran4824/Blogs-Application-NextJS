@@ -1,16 +1,16 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import parse from "html-react-parser";
+'use client';
+import React, { useEffect, useState } from 'react';
+import parse from 'html-react-parser';
 
 const OnThisPage = ({ htmlContent }) => {
   const [headings, setHeadings] = useState([]);
-  const [activeId, setActiveId] = useState("");
+  const [activeId, setActiveId] = useState('');
 
   useEffect(() => {
     // Parse the HTML content and extract h2 headings
-    const tempDiv = document.createElement("div");
+    const tempDiv = document.createElement('div');
     tempDiv.innerHTML = htmlContent;
-    const h2Elements = tempDiv.querySelectorAll("h2");
+    const h2Elements = tempDiv.querySelectorAll('h2');
     const h2Data = Array.from(h2Elements).map((h2) => ({
       text: h2.textContent,
       id: h2.id,
@@ -27,7 +27,7 @@ const OnThisPage = ({ htmlContent }) => {
           }
         });
       },
-      { rootMargin: "-50px 0px -80% 0px", threshold: 0.1 }
+      { rootMargin: '-50px 0px -80% 0px', threshold: 0.1 }
     );
 
     headings.forEach(({ id }) => {
@@ -51,8 +51,8 @@ const OnThisPage = ({ htmlContent }) => {
                 href={`#${heading.id}`}
                 className={`block text-gray-800 dark:text-gray-100 px-2 py-1 rounded-md transition-colors ${
                   activeId === heading.id
-                    ? "underline"
-                    : "hover:bg-gray-200 dark:hover:bg-gray-700"
+                    ? 'underline'
+                    : 'hover:bg-gray-200 dark:hover:bg-gray-700'
                 }`}
               >
                 {heading.text}

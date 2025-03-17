@@ -38,6 +38,7 @@ MongoDB is a popular NoSQL database known for its flexibility, scalability, and 
 To get started with MongoDB, follow these steps:
 
 ### 1. Install MongoDB
+
 Download and install MongoDB from the [official website](https://www.mongodb.com/try/download/community).
 
 Verify the installation using:
@@ -47,6 +48,7 @@ mongod --version
 ```
 
 ### 2. Start the MongoDB Server
+
 Run the following command to start MongoDB:
 
 ```bash
@@ -54,6 +56,7 @@ mongod
 ```
 
 ### 3. Connect to MongoDB Shell
+
 To interact with MongoDB, open a new terminal and run:
 
 ```bash
@@ -71,40 +74,40 @@ use myDatabase
 ### 2. Creating a Collection
 
 ```javascript
-db.createCollection("users")
+db.createCollection('users');
 ```
 
 ### 3. Inserting Documents
 
 ```javascript
-db.users.insertOne({ name: "John Doe", age: 30, email: "john@example.com" })
+db.users.insertOne({ name: 'John Doe', age: 30, email: 'john@example.com' });
 
 db.users.insertMany([
-    { name: "Alice", age: 25, email: "alice@example.com" },
-    { name: "Bob", age: 28, email: "bob@example.com" }
-])
+  { name: 'Alice', age: 25, email: 'alice@example.com' },
+  { name: 'Bob', age: 28, email: 'bob@example.com' },
+]);
 ```
 
 ### 4. Querying Data
 
 ```javascript
-db.users.find()
-db.users.find({ age: { $gt: 25 } })
-db.users.findOne({ name: "Alice" })
+db.users.find();
+db.users.find({ age: { $gt: 25 } });
+db.users.findOne({ name: 'Alice' });
 ```
 
 ### 5. Updating Documents
 
 ```javascript
-db.users.updateOne({ name: "John Doe" }, { $set: { age: 31 } })
-db.users.updateMany({}, { $set: { status: "active" } })
+db.users.updateOne({ name: 'John Doe' }, { $set: { age: 31 } });
+db.users.updateMany({}, { $set: { status: 'active' } });
 ```
 
 ### 6. Deleting Documents
 
 ```javascript
-db.users.deleteOne({ name: "Bob" })
-db.users.deleteMany({ age: { $lt: 30 } })
+db.users.deleteOne({ name: 'Bob' });
+db.users.deleteMany({ age: { $lt: 30 } });
 ```
 
 ## Connecting MongoDB with Node.js
@@ -124,20 +127,22 @@ Create a `db.js` file and add the following code:
 ```javascript
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/myDatabase', {
+mongoose
+  .connect('mongodb://localhost:27017/myDatabase', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("MongoDB Connected"))
-.catch(err => console.log(err));
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('MongoDB Connected'))
+  .catch((err) => console.log(err));
 ```
 
 ### 3. Define a Schema & Model
 
 ```javascript
 const userSchema = new mongoose.Schema({
-    name: String,
-    age: Number,
-    email: String
+  name: String,
+  age: Number,
+  email: String,
 });
 
 const User = mongoose.model('User', userSchema);
@@ -148,26 +153,32 @@ const User = mongoose.model('User', userSchema);
 #### Insert a User
 
 ```javascript
-const newUser = new User({ name: "Charlie", age: 27, email: "charlie@example.com" });
-newUser.save().then(() => console.log("User saved!"));
+const newUser = new User({
+  name: 'Charlie',
+  age: 27,
+  email: 'charlie@example.com',
+});
+newUser.save().then(() => console.log('User saved!'));
 ```
 
 #### Retrieve Users
 
 ```javascript
-User.find().then(users => console.log(users));
+User.find().then((users) => console.log(users));
 ```
 
 #### Update a User
 
 ```javascript
-User.updateOne({ name: "Charlie" }, { age: 28 }).then(() => console.log("User updated!"));
+User.updateOne({ name: 'Charlie' }, { age: 28 }).then(() =>
+  console.log('User updated!')
+);
 ```
 
 #### Delete a User
 
 ```javascript
-User.deleteOne({ name: "Charlie" }).then(() => console.log("User deleted!"));
+User.deleteOne({ name: 'Charlie' }).then(() => console.log('User deleted!'));
 ```
 
 ## Conclusion

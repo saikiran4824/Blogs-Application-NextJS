@@ -22,7 +22,6 @@
   }
 }
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -80,7 +79,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -90,7 +88,6 @@
   }
 }
 
-
 code[data-line-numbers] {
   counter-reset: line;
 }
@@ -99,7 +96,7 @@ span[data-highlighted-line] {
   background-color: #80808036;
 }
 
-mark[data-highlighted-chars]{
+mark[data-highlighted-chars] {
   background-color: #808080a8;
 }
 
@@ -115,14 +112,14 @@ code[data-line-numbers] > [data-line]::before {
   color: gray;
 }
 
-code[data-line-numbers-max-digits="2"] > [data-line]::before {
+code[data-line-numbers-max-digits='2'] > [data-line]::before {
   width: 1.25rem;
 }
 
-code[data-line-numbers-max-digits="3"] > [data-line]::before {
+code[data-line-numbers-max-digits='3'] > [data-line]::before {
   width: 1.75rem;
 }
 
-code[data-line-numbers-max-digits="4"] > [data-line]::before {
+code[data-line-numbers-max-digits='4'] > [data-line]::before {
   width: 2.25rem;
 }

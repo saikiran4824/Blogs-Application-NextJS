@@ -1,11 +1,11 @@
 ---
-title: Introduction to Tailwind CSS 
+title: Introduction to Tailwind CSS
 description: This is a Tailwind CSS tutorial to help you learn how to build modern websites using utility-first CSS.
 slug: introduction-to-tailwind-css
 author: Sai Kiran
 image: https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss.png
 ---
-  
+
 # Introduction to Tailwind CSS: A Comprehensive Tutorial
 
 Tailwind CSS has quickly become one of the most popular utility-first CSS frameworks in the web development community. Unlike traditional CSS frameworks that offer predefined components, Tailwind takes a different approach by providing a set of utility classes that allow you to style elements directly within your HTML. This tutorial will guide you through the core concepts of Tailwind CSS, how to set it up, and how to use it to build beautiful and responsive websites.
@@ -94,7 +94,9 @@ Tailwind’s mobile-first approach makes it simple to build responsive layouts. 
 Example:
 
 ```html
-<div class="p-4 bg-blue-500 text-white text-center sm:text-lg md:text-xl lg:text-2xl">
+<div
+  class="p-4 bg-blue-500 text-white text-center sm:text-lg md:text-xl lg:text-2xl"
+>
   This text changes size based on screen width.
 </div>
 ```
@@ -114,7 +116,7 @@ module.exports = {
       },
     },
   },
-}
+};
 ```
 
 ### 4. Purge Unused CSS
@@ -134,7 +136,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 ## Conclusion
