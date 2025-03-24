@@ -40,7 +40,7 @@ const OnThisPage = ({ htmlContent }) => {
 
   return (
     <div className="hidden md:block">
-      <div className="on-this-page fixed top-24 right-14 w-64 p-4 bg-white dark:bg-inherit shadow-lg rounded-lg">
+      <div className="on-this-page fixed top-32 right-14 w-64 p-4 bg-white dark:bg-inherit shadow-lg rounded-lg">
         <h2 className="text-md font-bold my-2 text-gray-900 dark:text-gray-100">
           On This Page
         </h2>

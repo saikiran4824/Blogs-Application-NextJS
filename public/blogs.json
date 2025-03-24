@@ -1,24 +1,24 @@
 [
   {
     "title": "A Comprehensive Guide to Frontend Frameworks",
-    "description": "Learn about the most popular frontend frameworks, their features, and how to choose the best one for your project.",
+    "description": "Explore how AI is transforming software development and whether developers should focus on learning everything or leverage AI tools.",
     "slug": "A-Comprehensive-Guide-to-Frontend-Frameworks",
     "author": "Sai Kiran",
     "image": "https://eluminoustechnologies.com/blog/wp-content/uploads/2022/12/Top-10-Best-Front-End-Frameworks-in-2023.jpg"
   },
   {
-    "title": "ChatGPT vs. Gemini",
-    "description": "This is a JavaScript tutorial and is intended for learning JavaScript.",
-    "slug": "chatgpt-vs-gemini",
+    "title": "The Role of AI in Development – Should You Learn Everything or Leverage AI?",
+    "description": "The Role of AI in Development – Should You Learn Everything or Leverage AI?",
+    "slug": "ai-in-development",
     "author": "Sai Kiran",
-    "image": "https://cdn.prod.website-files.com/63da3362f67ed649a19489ea/65a762d88d34c9b08de34039_659f1e3a57ce506fbcc81b42_who%2520owns%2520chatgpt_logo.png"
+    "image": "https://verpex.com/assets/uploads/images/blog/AI-in-Software-Development.webp?v=1706525951"
   },
   {
-    "title": "C++ Programming Tutorial",
-    "description": "This is a C++ tutorial and is intended for learning C++ programming.",
-    "slug": "cpp-programming-tutorial",
+    "title": "Software Architecture Patterns- Monolithic, Microservices, MVC, and More",
+    "description": "Learn about different software architecture patterns such as Monolithic, Microservices, and MVC, and understand when to use each one.",
+    "slug": "software-architecture-patterns",
     "author": "Sai Kiran",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tceuBj9MygoFpsBy8D8hYw.png"
   },
   {
     "title": "CSS Tutorial",

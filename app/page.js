@@ -50,26 +50,23 @@ export default function Home() {
   return (
     <>
       <main>
-        <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
-          <div className="w-full text-center lg:text-left  ">
-            <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-              Hey, <span className="font-semibold">I am Sai Kiran</span>{' '}
-              <br className="block md:hidden"></br>
-              <span className="font-semibold underline decoration-primary">
-                <span ref={el} />
-              </span>
-            </h1>
-          </div>
-        </section>
-        <div className=" flex items-center justify-center  border-2 dark:bg-inherit bg-white text-blue-600 dark:text-blue-400 p-6">
-          <Link href={'/blog'}>
-            <div className="text-3xl font-bold ">Go to Blogs Section</div>
-          </Link>
-        </div>
-      </main>
+  <section className="container px-4 py-10 mx-auto lg:h-128 lg:flex lg:items-center">
+    <div className="w-full text-center lg:text-left lg:w-full">
+      <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+        Hey, <span className="font-semibold">I am Sai Kiran</span>{' '}
+        <br className="block md:hidden" />
+        <span className="font-semibold underline decoration-primary">
+          <span ref={el} />
+        </span>
+      </h1>
+    </div>
+  </section>
+</main>
+
+
       <div className="min-h-screen flex items-center justify-center dark:bg-black bg-white text-black dark:text-white p-2">
         <div className="max-w-4xl bg-white dark:bg-inherit p-8 rounded-2xl shadow-lg">
-          <h1 className="text-4xl font-bold my-4 py-4 text-blue-600 dark:text-blue-400">
+          <h1 className="text-4xl font-bold my-4  text-blue-600 dark:text-blue-400">
             About Me
           </h1>
 

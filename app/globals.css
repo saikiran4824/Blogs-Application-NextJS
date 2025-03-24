@@ -123,3 +123,51 @@ code[data-line-numbers-max-digits='3'] > [data-line]::before {
 code[data-line-numbers-max-digits='4'] > [data-line]::before {
   width: 2.25rem;
 }
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* counter-clockwise */
+  }
+}
+
+@keyframes spin-reverse-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg); /* counter-clockwise */
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* clockwise */
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 4s linear infinite;
+}
+
+.animate-spin-reverse-2 {
+  animation: spin-reverse-2 3s linear infinite;
+}
+
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+img {
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+img.opacity-100 {
+  opacity: 1; 
+}

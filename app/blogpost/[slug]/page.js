@@ -15,6 +15,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import ScrollToTopButton from '@/components/scrollToTopButton';
 import matter from 'gray-matter';
+import "../../globals.css";
+import Footer from '@/components/footer';
 
 export default function Page({ params }) {
   const [blogData, setBlogData] = useState(null);
@@ -66,9 +68,16 @@ export default function Page({ params }) {
 
   if (!blogData)
     return (
-      <div className="flex justify-center items-center h-40">
-        <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 border-solid"></div>
-      </div>
+      <div className="flex justify-center items-center h-80 relative">
+      
+      <div className="animate-spin-reverse-2 rounded-full h-30 w-30 border-t-4 border-green-500 border-solid absolute"></div>
+      
+      <div className="animate-spin rounded-full h-20 w-20 border-t-4 border-red-500 border-solid absolute"></div>
+      
+      <div className="animate-spin-reverse rounded-full h-10 w-10 border-t-4 border-blue-500 border-solid absolute"></div>
+    </div>
+    
+
     );
 
   return (
@@ -88,16 +97,7 @@ export default function Page({ params }) {
       ></div>
       <OnThisPage htmlContent={htmlContent} />
       <ScrollToTopButton />
-      <footer className=" text-white dark:text-black py-8 my-8">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className=" text-center text-gray-400 dark:text-white text-sm border-t border-gray-700 pt-4">
-            <p>
-              © {new Date().getFullYear()} Sai Kiran 💖 Preethi. All rights
-              reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   );
 }

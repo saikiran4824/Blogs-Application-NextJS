@@ -1,5 +1,8 @@
 'use client';
+
 import { useState, useEffect } from 'react';
+import Link from 'next/link'; // Import Link component for navigation
+import { Button } from './ui/button';
 
 const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
@@ -27,12 +30,25 @@ const ScrollToTopButton = () => {
 
   return (
     showButton && (
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-8 right-8 px-4 py-2 text-sm font-semibold text-white dark:text-black bg-gray-800 dark:bg-gray-200 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-all shadow-lg"
-      >
-        Move to Top
-      </button>
+      <div className="fixed flex space-x-4 bottom-6 right-8 ">
+        <Link href="/blog">
+          <Button
+            variant="default" 
+            size="sm"
+            className="w-full shadow-lg hover:bg-primary/90 dark:hover:bg-primary/80 transition-all"
+          >
+            View Other Blogs
+          </Button>
+        </Link>
+        <Button
+          onClick={scrollToTop}
+          variant="default" 
+          size="sm" 
+          className="w-full shadow-lg hover:bg-primary/90 dark:hover:bg-primary/80 transition-all"
+        >
+          Move to Top
+        </Button>
+      </div>
     )
   );
 };
