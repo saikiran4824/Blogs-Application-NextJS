@@ -66,6 +66,12 @@ const Navbar = () => {
           >
             Blogs Section
           </Link>
+          <Link
+            href="https://portfolio-saikiran4824.vercel.app/"
+            className="hover:scale-105 hover:font-semibold transition-transform duration-300"
+          >
+            My Portfolio
+          </Link>
 
           <ModeToggle />
         </div>
@@ -100,6 +106,9 @@ const Navbar = () => {
                   <div className="flex flex-col gap-6">
                     <Link href="/"> Home</Link>
                     <Link href="/blog">Blogs Section</Link>
+                    <Link href="https://portfolio-saikiran4824.vercel.app/">
+                      My Portfolio
+                    </Link>
                   </div>
                 </SheetDescription>
               </SheetHeader>

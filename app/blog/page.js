@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
-import Footer from '@/components/footer';
 
 const Blog = () => {
   // State to store blogs and pagination variables
@@ -104,7 +103,6 @@ const Blog = () => {
           Next
         </Button>
       </div>
-      <Footer />
     </div>
   );
 };

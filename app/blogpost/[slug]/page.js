@@ -13,7 +13,6 @@ import { transformerCopyButton } from '@rehype-pretty/transformers';
 import OnThisPage from '@/components/onthispage';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
-import ScrollToTopButton from '@/components/scrollToTopButton';
 import matter from 'gray-matter';
 import "../../globals.css";
 import Footer from '@/components/footer';
@@ -96,7 +95,6 @@ export default function Page({ params }) {
         className="prose dark:prose-invert"
       ></div>
       <OnThisPage htmlContent={htmlContent} />
-      <ScrollToTopButton />
      <Footer/>
     </div>
   );

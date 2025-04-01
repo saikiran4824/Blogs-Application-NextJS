@@ -21,30 +21,46 @@
     "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tceuBj9MygoFpsBy8D8hYw.png"
   },
   {
-    "title": "CSS Tutorial",
-    "description": "This is a CSS tutorial and is intended for learning CSS.",
-    "slug": "css-tutorial",
+    "title": "How to Deploy a Full Stack Application",
+    "description": "A step-by-step guide on deploying a full stack application, covering frontend, backend, and database deployment.",
+    "slug": "deploy-fullstack-app",
     "author": "Sai Kiran",
-    "image": "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtiHuNijudwxehhyFhSPQ1m6U4hfZsfVmJw&s"
   },
   {
-    "title": "Introduction to MongoDB",
-    "description": "This is a MongoDB tutorial to help you learn how to build modern database-driven applications using MongoDB.",
-    "slug": "introduction-to-mongodb",
+   "title": "Comprehensive Guide to Major AWS Services and Their Use Cases",
+"description": "A detailed guide covering essential AWS services and how they are used in modern cloud applications.",
+    "slug": "aws-services-guide",
     "author": "Sai Kiran",
-    "image": "https://miro.medium.com/v2/resize:fit:1200/0*BmLKgrU_qFtakYsB.png"
+    "image": "https://miro.medium.com/v2/resize:fit:640/1*1S-Iwvkh_TRNuMHjDgavBw.png"
   },
   {
-    "title": "Introduction to Node.js",
-    "description": "This is a Node.js tutorial to help you learn how to build modern server-side applications using JavaScript.",
-    "slug": "introduction-to-nodejs",
+    "title": "System Design: Importance, Approach, and Best Practices",
+    "description": "A detailed guide on the importance of system design, how to approach complex problems, and the best tools to use for scalable and efficient architectures.",
+    "slug": "system-design-guide",
     "author": "Sai Kiran",
-    "image": "https://delta-dev-software.fr/wp-content/uploads/2024/02/nodejs.jpg"
+    "image": "https://miro.medium.com/v2/resize:fit:1101/1*06CfPLj0tGQAH98Jw9IkjQ.png"
   },
   {
-    "title": "Introduction to PHP",
+    "title": "DevOps Life Cycle: Tools and Approach for Continuous Integration and Delivery",
+    "description": "An in-depth guide on the entire DevOps life cycle, covering tools like Docker, Kubernetes, NGINX, Terraform, and CI/CD pipelines for automation and efficiency.",
+    "slug": "devops-lifecycle-guide",
+    "author": "Sai Kiran",
+    "image": "https://www.innominds.com/hs-fs/hubfs/Innominds-201612/img/IM-News-and-Blogs/DevOps-as-a-Service.jpg?width=750&name=DevOps-as-a-Service.jpg"
+  },
+  {
+    "title": "UI-UX Design Principles",
+    "description": "Learn essential UI/UX design principles to create intuitive and engaging digital experiences.",
+    "slug": "ui-ux-design-principles",
+    "author": "Sai Kiran",
+    "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png"
+  },
+  
+  
+  {
+    "title": "PHP Development & CRUD Operations",
     "description": "This is a PHP tutorial to help you learn how to build dynamic web applications using PHP.",
-    "slug": "introduction-to-php",
+    "slug": "php-development-and-crud-operatons",
     "author": "Sai Kiran",
     "image": "https://metamug.com/article/images/api-integration/create-rest-api-in-php.jpg"
   },
@@ -70,17 +86,25 @@
     "image": "https://almablog-media.s3.ap-south-1.amazonaws.com/MERN_Stack_9437df2ba9_62af1dd3fc.png"
   },
   {
+    "title": "Introduction to MongoDB",
+    "description": "This is a MongoDB tutorial to help you learn how to build modern database-driven applications using MongoDB.",
+    "slug": "introduction-to-mongodb",
+    "author": "Sai Kiran",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/0*BmLKgrU_qFtakYsB.png"
+  },
+  {
+    "title": "Introduction to Node.js",
+    "description": "This is a Node.js tutorial to help you learn how to build modern server-side applications using JavaScript.",
+    "slug": "introduction-to-nodejs",
+    "author": "Sai Kiran",
+    "image": "https://delta-dev-software.fr/wp-content/uploads/2024/02/nodejs.jpg"
+  },
+  {
     "title": "SSR Next.js",
     "description": "Learn how to build modern web applications using Next.js, a powerful React framework.",
     "slug": "ssr-nextjs",
     "author": "Sai Kiran",
     "image": "https://miro.medium.com/v2/resize:fit:1400/1*1itDSqxMNCT_XMksG99r-A.png"
-  },
-  {
-    "title": "UI-UX Design Principles",
-    "description": "Learn essential UI/UX design principles to create intuitive and engaging digital experiences.",
-    "slug": "ui-ux-design-principles",
-    "author": "Sai Kiran",
-    "image": "https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png"
   }
+  
 ]
