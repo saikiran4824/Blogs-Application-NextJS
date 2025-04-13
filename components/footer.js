@@ -72,42 +72,43 @@ export default function Footer() {
     ];
     
     const shuffledBlogs = [...blogData].sort(() => Math.random() - 0.5);
-    setBlogs(shuffledBlogs.slice(0, 3));
+    setBlogs(shuffledBlogs.slice(0, 6));
   }, []);
 
   return (
     <footer className="bg-inherit text-gray-700 dark:text-white py-8 mt-10 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div>
-          <h3 className="text-2xl underline font-bold text-gray-700 dark:text-white">
+          <h3 className="text-2xl my-4 underline font-bold text-gray-700 dark:text-white">
             Featured Blogs
           </h3>
           <ul className="mt-2">
             {blogs.map((blog, index) => (
-              <li key={index} className="mt-1">
+              <li key={index} className="mt-2 text-lg font-semibold">
                 <Link
                   href={`/blogpost/${blog.slug}`}
                   className="hover:text-gray-400"
                 >
-                  {blog.title}
+                  ➡️{blog.title}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="underline mt-6 pt-4 text-center text-sm">
-          &copy; {new Date().getFullYear()} Sai Kiran Tech Blog. All rights
-          reserved.
-        </div>
+        
         <Button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           variant="default"
           size="sm"
-          className="w-full sm:w-auto mt-4 md:mt-0  shadow-lg hover:bg-primary/90 dark:hover:bg-primary/80 transition-all"
+          className="w-full sm:w-auto mt-4   shadow-lg hover:bg-primary/90 dark:hover:bg-primary/80 transition-all"
         >
-          Move to Top
+          Move to Top 🔝
         </Button>
+
       </div>
+      <div className="underline mt-6 pt-4 text-center text-xl">
+          &copy; {new Date().getFullYear()} Sai Kiran Tech Blogs.
+        </div>
     </footer>
   );
 }

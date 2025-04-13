@@ -21,6 +21,16 @@
     "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tceuBj9MygoFpsBy8D8hYw.png"
   },
   {
+    "title": "Backend Testing in Software Development: A Complete Guide",
+    "description": "An in-depth guide to backend testing in software development. Explore the different types of backend testing like API, database, unit, integration, performance, and security testing, along with tools, real-world examples, and best practices.",
+    "slug": "backend-testing-guide",
+    "author": "Sai Kiran",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtiHuNijudwxehhyFhSPQ1m6U4hfZsfVmJw&s"
+  },
+  
+  
+  
+  {
     "title": "How to Deploy a Full Stack Application",
     "description": "A step-by-step guide on deploying a full stack application, covering frontend, backend, and database deployment.",
     "slug": "deploy-fullstack-app",
@@ -47,6 +57,20 @@
     "slug": "devops-lifecycle-guide",
     "author": "Sai Kiran",
     "image": "https://www.innominds.com/hs-fs/hubfs/Innominds-201612/img/IM-News-and-Blogs/DevOps-as-a-Service.jpg?width=750&name=DevOps-as-a-Service.jpg"
+  },
+  {
+    "title": "Text-Driven to Test-Driven Development (TDDv → TDD)",
+    "description": "Learn how combining Text-Driven and Test-Driven Development improves software clarity, reliability, and team collaboration.",
+    "slug": "text-to-test-driven-development",
+    "author": "Sai Kiran",
+    "image": "https://browserstack.wpenginepowered.com/wp-content/uploads/2023/06/What-is-Test-Driven-Development-TDD.png"
+  },
+  {
+    "title": "Data Flow and State Management in Frontend Frameworks: A Deep Dive",
+    "description": "A comprehensive guide on how data flows in modern frontend frameworks, exploring state management concepts, libraries, and approaches in frameworks like React, Angular, Vue, and Svelte..",
+    "slug": "data-flow-state-management-frontend-frameworks",
+    "author": "Sai Kiran",
+    "image": "https://ucarecdn.com/ead88772-8e34-4114-b0c1-fb44ae21a748/"
   },
   {
     "title": "UI-UX Design Principles",
@@ -98,13 +122,7 @@
     "slug": "introduction-to-nodejs",
     "author": "Sai Kiran",
     "image": "https://delta-dev-software.fr/wp-content/uploads/2024/02/nodejs.jpg"
-  },
-  {
-    "title": "SSR Next.js",
-    "description": "Learn how to build modern web applications using Next.js, a powerful React framework.",
-    "slug": "ssr-nextjs",
-    "author": "Sai Kiran",
-    "image": "https://miro.medium.com/v2/resize:fit:1400/1*1itDSqxMNCT_XMksG99r-A.png"
   }
+  
   
 ]
