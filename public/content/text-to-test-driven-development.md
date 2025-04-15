@@ -66,8 +66,7 @@ This becomes the blueprint for the feature and tests.
 User should be able to add a product to the shopping cart.
 
 csharp
-Copy
-Edit
+
 
 #### ✅ Step 2: Write a Test (TDD)
 
@@ -79,8 +78,7 @@ it('should add a product to the cart', () => {
 });
 🛠 Step 3: Implement Code
 js
-Copy
-Edit
+
 class Cart {
   constructor() {
     this.items = [];

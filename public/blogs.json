@@ -25,11 +25,8 @@
     "description": "An in-depth guide to backend testing in software development. Explore the different types of backend testing like API, database, unit, integration, performance, and security testing, along with tools, real-world examples, and best practices.",
     "slug": "backend-testing-guide",
     "author": "Sai Kiran",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXtiHuNijudwxehhyFhSPQ1m6U4hfZsfVmJw&s"
+    "image": "https://www.keenesystems.com/hs-fs/hubfs/software-testing.jpg?width=900&name=software-testing.jpg"
   },
-  
-  
-  
   {
     "title": "How to Deploy a Full Stack Application",
     "description": "A step-by-step guide on deploying a full stack application, covering frontend, backend, and database deployment.",
@@ -66,12 +63,41 @@
     "image": "https://browserstack.wpenginepowered.com/wp-content/uploads/2023/06/What-is-Test-Driven-Development-TDD.png"
   },
   {
+    "title": "Full-Stack Security Best Practices in Web Development",
+    "description": "Explore comprehensive security practices across frontend, backend, and databases to protect your web application from real-world threats.",
+    "slug": "fullstack-security-web-development",
+    "author": "Sai Kiran",
+    "image": "https://www.cisco.com/content/dam/cisco-cdc/site/images/legacy/assets/swa/img/anchor-info/what-is-security-software-628x353.png"
+  },
+  {
     "title": "Data Flow and State Management in Frontend Frameworks: A Deep Dive",
     "description": "A comprehensive guide on how data flows in modern frontend frameworks, exploring state management concepts, libraries, and approaches in frameworks like React, Angular, Vue, and Svelte..",
     "slug": "data-flow-state-management-frontend-frameworks",
     "author": "Sai Kiran",
     "image": "https://ucarecdn.com/ead88772-8e34-4114-b0c1-fb44ae21a748/"
   },
+  {
+    "title": "150 Important DSA Questions Covering All Topics",
+    "description": "Explore a comprehensive list of 150 important DSA questions covering various topics such as arrays, trees, graphs, dynamic programming, and more, with explanations to strengthen your problem-solving skills.",
+    "slug": "150-important-dsa-questions",
+    "author": "Sai Kiran",
+    "image": "https://deen3evddmddt.cloudfront.net/uploads/content-images/what-is-dsa.webp"
+  },
+  {
+    "title": "A Complete Guide to TypeScript Unlocking the Power of Static Typing",
+    "description": "Explore TypeScript, its key features, and why it's a powerful tool for building scalable and maintainable applications.",
+    "slug": "a-complete-guide-to-typescript",
+    "author": "Sai Kiran",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png"
+  },
+  {
+    "title": "Testing in Frontend Development, Low-Level Design Patterns to Follow, and Performance Metrics to Follow",
+    "description": "A comprehensive guide to testing strategies, low-level design patterns, and key performance metrics for frontend development to ensure robust, maintainable, and efficient applications.",
+    "slug": "testing-in-frontend-development-low-level-design-patterns-performance-metrics",
+    "author": "Sai Kiran",
+    "image": "https://cdn-server-blog.hiddenbrains.com/blog/wp-content/uploads/2017/01/Front-end-Performance-Metrics.png"
+  },
+  
   {
     "title": "UI-UX Design Principles",
     "description": "Learn essential UI/UX design principles to create intuitive and engaging digital experiences.",

@@ -1,9 +1,9 @@
 ---
-title: "Data Flow and State Management in Frontend Frameworks: A Deep Dive"
-description: "A comprehensive guide on how data flows in modern frontend frameworks, exploring state management concepts, libraries, and approaches in frameworks like React, Angular, Vue, and Svelte."
-slug: "data-flow-state-management-frontend-frameworks"
+title: "Backend Testing in Software Development: A Complete Guide"
+description: "An in-depth guide to backend testing in software development. Explore the different types of backend testing like API, database, unit, integration, performance, and security testing, along with tools, real-world examples, and best practices."
+slug: "backend-testing-guide"
 author: "Sai Kiran"
-image: "https://ucarecdn.com/ead88772-8e34-4114-b0c1-fb44ae21a748/"
+image: "https://www.keenesystems.com/hs-fs/hubfs/software-testing.jpg?width=900&name=software-testing.jpg"
 ---
 
 
